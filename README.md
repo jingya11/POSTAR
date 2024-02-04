@@ -5,4 +5,5 @@ The workflow of POSTAR  mainly included three procedures: <br>
 
 GEE_code/01-PPPM corrosponding to GEE code for Step 1;<br>
 GEE_code/02-Export SAR data corrosponding to GEE code for exporting VH and VH/VV time series of potential rice samples;<br>
+"pppm20000_VH_VHVV_Kmeans.csv" refers to the Kmeans results of 20000 randomly selected potential rice samples;<br>
 Two-step refinement strategy/TwoStep_Refinement_Strategy corrosponding to python code for Step3, ;<br>
