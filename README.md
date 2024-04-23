@@ -40,6 +40,7 @@ Fig.4 The pre-labeling process involves identifying candidate clusters as SC-Ric
 
 **03-POPM20000_VH_VHVV_Kmeans.csv:** <br>
 CSV_ Columns---VHVV_* & VH_* : S-1 VH/VV and VH values for 20000 randomly selected potential rice objects. These objects were randomly selected from POPM result, and their VH and VH/VV data were exported using S1 data generation.js;<br>
+
 CSV_ Columns---*_kmeans results: VH cluster IDs and VH/VV cluster IDs for 20000 potential rice objects, which were generated using Calculate PVE and Kmeans clustering.py;<br>
 
 **04-Prelabeling_results.csv:** The cluster IDs represent DC-Rice VH/VV and VH candidate clusters, identified based on distinct SAR-based phenological features;<br>
