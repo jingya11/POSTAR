@@ -34,7 +34,7 @@ Fig.4 The pre-labeling process involves identifying candidate clusters as SC-Ric
 **TwostepRefinementStrategy.py:** Code for applying the two-step refinement strategy to filter high-confidence SC- and DC-Rice samples (Data-5);<br>
 
 ### Demo data
-**01-snic_output_region.tif:** Result of SNIC exported from SNIC segmentation.js;<br>
+**01-SNIC_output_demo_region.tif:** Result of SNIC exported from SNIC segmentation.js;<br>
 
 **02-POPM_demo_region_output1.tif:** Object-based potential rice map exported from POPM.js;<br>
 
