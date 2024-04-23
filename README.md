@@ -1,8 +1,9 @@
 # An automated sample generation method by integrating phenology domain optical-SAR features in rice cropping pattern mapping
 This is an official implementation of POSTAR method in our paper: An automated sample generation method by integrating phenology domain optical-SAR features in rice cropping pattern mapping
-
+<p align="center">
 ![image](https://github.com/jingya11/POSTAR/blob/main/IMAGE/IMAGE-01.jpg)
 Fig.1 Framework of the POSTAR method for generating SC-Rice and DC-Rice samples
+</p>
 
 The workflow of POSTAR  mainly included three procedures: <br>
 
