@@ -13,7 +13,7 @@ Fig.2 Overview of Code and Demo Data
 
 ## Detailed Descriptions for Code and Demo Data are Provided as Follows:
 ### Data pre-processing
-**SNIC segmentation.js:** GEE code for performing image segmentation to generate objects; The segmented images (Data-1) were then used in S1 data generation.js and POPM.js to calculate the average values of each feature. ultimately generating object-based features (i.e., NDVI, EVI, LSWI, VH, and VH/VV) employed in the POSTAR; <br>
+**SNIC segmentation.js:** GEE code for performing image segmentation to generate objects; The segmented images (Data-1) were then used in S1 data generation.js and POPM.js to calculate the average values of each feature, ultimately generating object-based features (i.e., NDVI, EVI, LSWI, VH, and VH/VV) employed in the POSTAR; <br>
 
 **S1 data generation.js:** GEE code for generating object-based S-1 VH and VH/VV data;<br>
 
