@@ -34,21 +34,21 @@ Fig.4 The pre-labeling process involves identifying candidate clusters as SC-Ric
 **TwostepRefinementStrategy.py:** Code for applying the two-step refinement strategy to filter high-confidence SC- and DC-Rice samples (Data-5);<br>
 
 ### Demo data
-**snic_output_region.tif:** Result of SNIC exported from SNIC segmentation.js;<br>
+**01-snic_output_region.tif:** Result of SNIC exported from SNIC segmentation.js;<br>
 
-**POPM_demo_region_output1.tif:** Object-based potential rice map exported from POPM.js;<br>
+**02-POPM_demo_region_output1.tif:** Object-based potential rice map exported from POPM.js;<br>
 
-**POPM20000_VH_VHVV_Kmeans.csv:** <br>
+**03-POPM20000_VH_VHVV_Kmeans.csv:** <br>
 CSV_ Columns---VHVV_* & VH_* : S-1 VH/VV and VH values for 20000 randomly selected potential rice objects. These objects were randomly selected from POPM result, and their VH and VH/VV data were exported using S1 data generation.js;<br>
 CSV_ Columns---*_kmeans results: VH cluster IDs and VH/VV cluster IDs for 20000 potential rice objects, which were generated using Calculate PVE and Kmeans clustering.py;<br>
 
-**Prelabeling_results.csv:** The cluster IDs represent DC-Rice VH/VV and VH candidate clusters, identified based on distinct SAR-based phenological features;<br>
+**04-Prelabeling_results.csv:** The cluster IDs represent DC-Rice VH/VV and VH candidate clusters, identified based on distinct SAR-based phenological features;<br>
 ![image](https://github.com/jingya11/POSTAR/blob/main/IMAGE/IMAGE-05.jpg)
 <p align="center">
 Fig.5 The visualization of SC-Rice and DC-Rice candidate clusters identified by K-means
 </p>
 
-**VH_VHVV_purified_doublerice.csv:** VH and VH/VV data for POSTAR-derived DC-Rice samples, which were outputted from TwostepRefinementStrategy.py.
+**05-VH_VHVV_purified_doublerice.csv:** VH and VH/VV data for POSTAR-derived DC-Rice samples, which were outputted from TwostepRefinementStrategy.py.
 ![image](https://github.com/jingya11/POSTAR/blob/main/IMAGE/IMAGE-06.jpg)
 <p align="center">
 Fig.5 The visualization of POSTAR-derived DC-Rice samples after applying the two-step refinement stragety
