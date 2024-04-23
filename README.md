@@ -11,7 +11,7 @@ Fig.1 Framework of the POSTAR method for generating SC-Rice and DC-Rice samples
 Fig.2 Overview of Code and Demo Data
 </p>
 
-# Detailed Descriptions for Code and Demo Data are Provided as Follows:
+## Detailed Descriptions for Code and Demo Data are Provided as Follows:
 The workflow of POSTAR  mainly included three procedures: <br>
 
 GEE_code/01-PPPM corrosponding to the GEE code for Step 1 of POSTAR;<br>
