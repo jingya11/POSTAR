@@ -62,7 +62,8 @@ var s2SR_withCloudProbability = indexJoin(s2SR_roi, cloud_probability_roi, 'clou
 var s2SR_removecloud_V0= ee.ImageCollection(s2SR_withCloudProbability.map(maskImage));
 var s2SR_removecloud=s2SR_removecloud_V0.map(function(img){
   var img1=img.select(['B1','B2','B3','B4','B5','B6','B7','B8','B8A','B9','B11','B12']).divide(10000);
-  var out = img1.copyProperties(img).copyProperties(img,['system:time_start']);
+  var img2=img1.addBands(img.select('probability'));
+  var out = img2.copyProperties(img).copyProperties(img,['system:time_start']);
   return out;
 })
 //print(s2SR_removecloud,'s2SR_removecloud')
@@ -71,7 +72,7 @@ var s2SR_removecloud=s2SR_removecloud_V0.map(function(img){
 //NDVI
 function NDVI(img){
   var ndvi = img.normalizedDifference(["B8","B4"])
-  var ndvi_1=ndvi.addBands(demo_snic_output_region).reduceConnectedComponents(ee.Reducer.mean(), 'b1', 256);
+  var ndvi_1=ndvi.addBands(demo_snic_output_region).reduceConnectedComponents(ee.Reducer.mean(), 'b1', 256).updateMask((img.select('probability').gt(65)).not());
   // users can upload Seg_result(Segmentation results in tiff format) to extent PPPM to POPM,
   return ndvi_1.clamp(-1,1);
 }
@@ -88,13 +89,13 @@ function EVI(img){
       "blue":blue
     }
     );
-  var evi_1=evi.addBands(demo_snic_output_region).reduceConnectedComponents(ee.Reducer.mean(), 'b1', 256);
+  var evi_1=evi.addBands(demo_snic_output_region).reduceConnectedComponents(ee.Reducer.mean(), 'b1', 256).updateMask((img.select('probability').gt(65)).not());
     return evi_1.clamp(-1,1);
 }
 //LSWI
 function LSWI(img){
   var lswi = img.normalizedDifference(["B8","B11"]);
-  var lswi_1=lswi.addBands(demo_snic_output_region).reduceConnectedComponents(ee.Reducer.mean(), 'b1', 256);
+  var lswi_1=lswi.addBands(demo_snic_output_region).reduceConnectedComponents(ee.Reducer.mean(), 'b1', 256).updateMask((img.select('probability').gt(65)).not());
   return lswi_1;
 }
 
